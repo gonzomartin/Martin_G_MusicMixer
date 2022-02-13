@@ -9,7 +9,7 @@
 ## Installation
     	You can access to the repo and clone it on GitHub here  
 
-    	>> >> >> https://github.com/gonzomartin/https://github.com/gonzomartin/Martin_G_MusicMixer
+    	>> >> >> github.com/gonzomartin/Martin_G_MusicMixer
 
 
 ## Usage
@@ -24,6 +24,7 @@
 	### Investigation
 	The project was to create an interactive app that works with drag and drop factors, so
 	i decide to mix this with a chill vibe and something that i love a lot as is the reggae music.
+	There is a pinterest board where you can see the graphic inspiration https://www.pinterest.es/gonzalitoma/reggae-dub-music-mixer/
 
 
 ## Credits
