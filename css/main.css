@@ -1,0 +1,40 @@
+body {
+	margin: 0px;
+	border: 0px;
+	background-color: #e8e2d8;
+	color:#333333;
+	font-family: 'Rock Salt', cursive;
+	font-size:40px;
+}
+
+header {
+	position: relative;
+	top: 20px;
+	width:600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px
+}
+
+#instrumentBoard {
+	width: 100%;
+	text-align: center;
+}
+
+.instrumentsIcons {
+  height: 800px;
+  width: 400px;
+  border: medium solid #333;
+  margin-left: 20px;
+}
+
+.puzzle-image {
+	width: 30%;
+	flex: auto;
+	padding: 16px 20px;
+	cursor: pointer;
+}
