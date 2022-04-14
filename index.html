@@ -12,28 +12,51 @@
 
 <body>
   <header id="headLine">
-    <h1>Reggae Dub Music Mixer</h1><br>
-    <p>Mix a feel the boomboclap!</p>
+    <h1>Reggae Dub Music Mixer</h1>
+    <h2>Mix a feel the boomboclap!</h2>
   </header>
 
   <section id="instrumentBoard">
     <div class="instrumentsIcons">
-			<img id="bass" draggable="true" src="assets/bass.svg" class="puzzle-image" alt="top left">
-			<img id="bongos" draggable="true" src="assets/bongoes.svg" class="puzzle-image" alt="top right">
-			<img id="drums" draggable="true" src="assets/drums.svg" class="puzzle-image" alt="bottom left">
-			<img id="clave" draggable="true" src="assets/claves.svg" class="puzzle-image" alt="bottom right">
-      <img id="guitar" draggable="true" src="assets/guitar.svg" class="puzzle-image" alt="bottom right">
-      <img id="horn" draggable="true" src="assets/horn.svg" class="puzzle-image" alt="bottom right">
-      <img id="keyboard" draggable="true" src="assets/piano.svg" class="puzzle-image" alt="bottom right">
-      <img id="melodica" draggable="true" src="assets/melodica.svg" class="puzzle-image" alt="bottom right">
-      <img id="synthesizer" draggable="true" src="assets/synth.svg" class="puzzle-image" alt="bottom right">
-      <img id="trumpet" draggable="true" src="assets/trumpet.svg" class="puzzle-image" alt="bottom right">
+      <h2 class="hidden">Audio Tracks</h2>
+      <audio src="audio/bass.wav">
+      </audio>
+      <div class="IconCont">
+        <div class="LIcons">
+          <img id="bass" draggable="true" src="assets/bass.svg" data-trackref="bass" class="puzzle-image audioref" alt="LeftZone Icons">
+    			<img id="drums" draggable="true" src="assets/drums.svg" data-trackref="drums" class="puzzle-image audioref" alt="LeftZone Icons">
+          <img id="guitar" draggable="true" src="assets/guitar.svg" data-trackref="guitar" class="puzzle-image audioref" alt="LeftZone Icons">
+          <img id="keyboard" draggable="true" src="assets/piano.svg" data-trackref="Piano" class="puzzle-image audioref" alt="LeftZone Icons">
+          <img id="synth" draggable="true" src="assets/synth.svg" data-trackref="synth" class="puzzle-image audioref" alt="LeftZone Icons">
+        </div>
+        <div class="RIcons">
+          <img id="bongos" draggable="true" src="assets/bongoes.svg" data-trackref="Bongo" class="puzzle-image audioref" alt="RightZone Icons">
+    			<img id="clave" draggable="true" src="assets/claves.svg" data-trackref="clave" class="puzzle-image audioref" alt="RightZone Icons">
+          <img id="horn" draggable="true" src="assets/horn.svg" data-trackref="Horn" class="puzzle-image audioref" alt="RightZone Icons">
+          <img id="melodica" draggable="true" src="assets/melodica.svg" data-trackref="Melodica" class="puzzle-image audioref" alt="RightZone Icons">
+          <img id="trumpet" draggable="true" src="assets/trumpet.svg" data-trackref="Trumpet" class="puzzle-image audioref" alt="RightZone Icons">
+        </div>
+      </div>
 		</div>
-
-    <div class="dropZone">
-
+    <div class="iconsDropZone">
+      <div class="dropZone 1"></div>
+      <div class="dropZone 2"></div>
+      <div class="dropZone 3"></div>
+      <div class="dropZone 4"></div>
+      <div class="dropZone 5"></div>
     </div>
   </section>
+
+  <footer>
+    <section class="audio-controls">
+      <button id="playButton">PLAY</button>
+      <button id="pauseButton">STOP</button>
+      <button id="rewindButton">REWIND</button>
+
+      <input id="volume-control" type="range" min="0" max="100" step="1">
+
+    </section>
+  </footer>
 
 <script src="js/main.js"></script>
 </body>
