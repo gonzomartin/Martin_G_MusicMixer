@@ -1,40 +1,126 @@
 body {
 	margin: 0px;
 	border: 0px;
-	background-color: #e8e2d8;
+	background-image: url(../images/MusicMixerBG.jpg);
 	color:#333333;
 	font-family: 'Rock Salt', cursive;
-	font-size:40px;
+	font-size: 40px;
+}
+
+.hidden {
+	display: none;
 }
 
 header {
 	position: relative;
 	top: 20px;
-	width:600px;
 	margin: 0px auto;
 	text-align: center;
+	margin-top: 10px;
 }
 
-p {
+h1 {
+	margin: 0;
+	font-size: 30px;
+}
+h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 26px
+  font-size: 20px;
+	margin-top: 16px;
 }
 
 #instrumentBoard {
-	width: 100%;
-	text-align: center;
+	/*! display: inline-block; */
+	/*! display: inline; */
+	display: flex;
 }
 
 .instrumentsIcons {
-  height: 800px;
-  width: 400px;
-  border: medium solid #333;
-  margin-left: 20px;
+  height: 834px;
+  width: 415px;
+  margin-left: 88px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.iconsDropZone {
+	height: 830px;
+	width: 200px;
+	margin-left: 1118px;
+	/*! margin-right: 423px; */
+	/*! display: inline-block; */
+	/*! align-content: end; */
+	/*! justify-content: end; */
 }
 
 .puzzle-image {
-	width: 30%;
-	flex: auto;
-	padding: 16px 20px;
+	display: block;
+	width: 151px;
+	/*! flex: auto; */
+	/*! padding: 16px 20px; */
 	cursor: pointer;
+}
+
+.LIcons {
+	margin-top: 10px;
+	width: 200px;
+	/*! float: left; */
+	display: flex;
+	flex-direction: column;
+}
+.RIcons {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 65px;
+	margin-bottom: 20px;
+}
+
+#bass, #drums, #guitar, #keyboard, #synth {
+	margin-left: 25px;
+	float: left;
+	margin-bottom: 55px;
+}
+#bongos, #clave, #horn, #melodica, #trumpet {
+	/*! float: right; */
+	/*! margin-bottom: 38px; */
+	/*! margin-right: 24px; */
+}
+#keyboard {
+	margin-left: 10px;
+	margin-top: 30px;
+	width: 170px;
+}
+#synth {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+#clave {
+	/*! margin-top: 18px; */
+}
+#horn {
+	margin-top: 7px;
+}
+#melodica {
+	/*! margin-right: 40px; */
+	/*! margin-top: 12px; */
+	width: 110px;
+}
+
+.audio-controls {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.dropZone {
+	/*! display: flex; */
+	/*! align-content: center; */
+	width: 196px;
+	height: 152px;
+	/*! margin-bottom: 25px; */
+	margin-top: 17px;
+}
+
+.IconCont {
+	display: flex;
 }
