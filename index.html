@@ -19,43 +19,75 @@
   <section id="instrumentBoard">
     <div class="instrumentsIcons">
       <h2 class="hidden">Audio Tracks</h2>
-      <audio src="audio/bass.wav">
+      <audio id="sampleAudio" src="audio/bass.wav">
       </audio>
       <div class="IconCont">
         <div class="LIcons">
-          <img id="bass" draggable="true" src="assets/bass.svg" data-trackref="bass" class="puzzle-image audioref" alt="LeftZone Icons">
-    			<img id="drums" draggable="true" src="assets/drums.svg" data-trackref="drums" class="puzzle-image audioref" alt="LeftZone Icons">
-          <img id="guitar" draggable="true" src="assets/guitar.svg" data-trackref="guitar" class="puzzle-image audioref" alt="LeftZone Icons">
-          <img id="keyboard" draggable="true" src="assets/piano.svg" data-trackref="Piano" class="puzzle-image audioref" alt="LeftZone Icons">
-          <img id="synth" draggable="true" src="assets/synth.svg" data-trackref="synth" class="puzzle-image audioref" alt="LeftZone Icons">
+          <div class="Zoneone">
+            <img id="bass" draggable="true" src="assets/bass.svg" data-trackref="bass" class="puzzle-image audioref" alt="LeftZone Icons">
+          </div>
+          <div class="Zonetwo">
+            <img id="drums" draggable="true" src="assets/drums.svg" data-trackref="drums" class="puzzle-image audioref" alt="LeftZone Icons">
+          </div>
+          <div class="Zonothree">
+            <img id="guitar" draggable="true" src="assets/guitar.svg" data-trackref="guitar" class="puzzle-image audioref" alt="LeftZone Icons">
+          </div>
+          <div class="Zonefour">
+            <img id="keyboard" draggable="true" src="assets/piano.svg" data-trackref="Piano" class="puzzle-image audioref" alt="LeftZone Icons">
+          </div>
+          <div class="Zonefive">
+            <img id="synth" draggable="true" src="assets/synth.svg" data-trackref="synth" class="puzzle-image audioref" alt="LeftZone Icons">
+          </div>
         </div>
         <div class="RIcons">
-          <img id="bongos" draggable="true" src="assets/bongoes.svg" data-trackref="Bongo" class="puzzle-image audioref" alt="RightZone Icons">
-    			<img id="clave" draggable="true" src="assets/claves.svg" data-trackref="clave" class="puzzle-image audioref" alt="RightZone Icons">
-          <img id="horn" draggable="true" src="assets/horn.svg" data-trackref="Horn" class="puzzle-image audioref" alt="RightZone Icons">
-          <img id="melodica" draggable="true" src="assets/melodica.svg" data-trackref="Melodica" class="puzzle-image audioref" alt="RightZone Icons">
-          <img id="trumpet" draggable="true" src="assets/trumpet.svg" data-trackref="Trumpet" class="puzzle-image audioref" alt="RightZone Icons">
+          <div class="Zonesix">
+            <img id="bongos" draggable="true" src="assets/bongoes.svg" data-trackref="Bongo" class="puzzle-image audioref" alt="RightZone Icons">
+          </div>
+          <div class="Zoneseven">
+            <img id="clave" draggable="true" src="assets/claves.svg" data-trackref="clave" class="puzzle-image audioref" alt="RightZone Icons">
+          </div>
+          <div class="Zoneeight">
+            <img id="horn" draggable="true" src="assets/horn.svg" data-trackref="Horn" class="puzzle-image audioref" alt="RightZone Icons">
+          </div>
+    			<div class="Zonenine">
+            <img id="melodica" draggable="true" src="assets/melodica.svg" data-trackref="Melodica" class="puzzle-image audioref" alt="RightZone Icons">
+          </div>
+          <div class="Zoneten">
+            <img id="trumpet" draggable="true" src="assets/trumpet.svg" data-trackref="Trumpet" class="puzzle-image audioref" alt="RightZone Icons">
+          </div>
         </div>
       </div>
 		</div>
     <div class="iconsDropZone">
-      <div class="dropZone 1"></div>
-      <div class="dropZone 2"></div>
-      <div class="dropZone 3"></div>
-      <div class="dropZone 4"></div>
-      <div class="dropZone 5"></div>
+      <div class="dropZone one" id="1"></div>
+      <audio id="track1" src="" loop="true"></audio>
+      <div class="dropZone two" id="2"></div>
+      <audio id="track2" src="" loop="true"></audio>
+      <div class="dropZone three" id="3"></div>
+      <audio id="track3" src="" loop="true"></audio>
+      <div class="dropZone four" id="4"></div>
+      <audio id="track4" src="" loop="true"></audio>
+      <div class="dropZone five" id="5"></div>
+      <audio id="track5" src="" loop="true"></audio>
     </div>
+
+
   </section>
 
   <footer>
-    <section class="audio-controls">
-      <button id="playButton">PLAY</button>
-      <button id="pauseButton">STOP</button>
-      <button id="rewindButton">REWIND</button>
-
-      <input id="volume-control" type="range" min="0" max="100" step="1">
-
-    </section>
+    <div class="controls">
+      <section class="audioSamplescontrols">
+        <button class="buttons" id="playSampleButton">PLAY</button>
+        <button class="buttons" id="pauseSampleButton">STOP</button>
+        <button class="buttons" id="rewindSampleButton">REWIND</button>
+      </section>
+      <section class="audio-controls">
+        <button class="buttons" id="playButton">PLAY</button>
+        <button class="buttons" id="pauseButton">STOP</button>
+        <button class="buttons" id="rewindButton">REWIND</button>
+      </section>
+    </div>
+    <a href="index.html" class="goBack">Go back</a>
   </footer>
 
 <script src="js/main.js"></script>
