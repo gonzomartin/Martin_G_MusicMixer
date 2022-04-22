@@ -12,11 +12,12 @@ body {
 }
 
 header {
-	position: relative;
+	position: absolute;
 	top: 20px;
 	margin: 0px auto;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 14px;
+	left: 800px;
 }
 
 h1 {
@@ -30,97 +31,124 @@ h2 {
 }
 
 #instrumentBoard {
-	/*! display: inline-block; */
-	/*! display: inline; */
-	display: flex;
+	display: inline-flex;
+	margin-top: 80px;
 }
 
-.instrumentsIcons {
-  height: 834px;
-  width: 415px;
-  margin-left: 88px;
-  margin-top: 10px;
-  display: inline-block;
-}
+
 .iconsDropZone {
-	height: 830px;
-	width: 200px;
-	margin-left: 1118px;
-	/*! margin-right: 423px; */
-	/*! display: inline-block; */
-	/*! align-content: end; */
-	/*! justify-content: end; */
+	height: 840px;
+	width: 171px;
+	padding-left: 1161px;
 }
 
-.puzzle-image {
-	display: block;
-	width: 151px;
-	/*! flex: auto; */
-	/*! padding: 16px 20px; */
-	cursor: pointer;
-}
 
 .LIcons {
-	margin-top: 10px;
-	width: 200px;
-	/*! float: left; */
+	width: 185px;
+	margin-left: 113px;
 	display: flex;
 	flex-direction: column;
+	height: 835px;
+	justify-content: space-between;
 }
 .RIcons {
-	width: 200px;
+	margin-left: 29px;
 	display: flex;
 	flex-direction: column;
-	margin-left: 65px;
-	margin-bottom: 20px;
+	height: 837px;
+	justify-content: space-between;
 }
 
 #bass, #drums, #guitar, #keyboard, #synth {
-	margin-left: 25px;
-	float: left;
-	margin-bottom: 55px;
+	display: block;
+	width: 151px;
+	cursor: pointer;
 }
 #bongos, #clave, #horn, #melodica, #trumpet {
-	/*! float: right; */
-	/*! margin-bottom: 38px; */
-	/*! margin-right: 24px; */
-}
-#keyboard {
-	margin-left: 10px;
-	margin-top: 30px;
-	width: 170px;
-}
-#synth {
-	margin-top: 20px;
-	margin-bottom: 0px;
-}
-#clave {
-	/*! margin-top: 18px; */
-}
-#horn {
-	margin-top: 7px;
-}
-#melodica {
-	/*! margin-right: 40px; */
-	/*! margin-top: 12px; */
-	width: 110px;
+	display: block;
+	width: 151px;
+	cursor: pointer;
 }
 
+#keyboard {
+	margin-top: 20px;
+}
+
+#melodica {
+	max-width: 104px;
+}
+.audioSamplescontrols {
+	display: flex;
+	/*! justify-content: center; */
+	margin-top: 10px;
+	margin-left: 171px;
+}
 .audio-controls {
 	display: flex;
-	justify-content: center;
+	/*! justify-content: end; */
 	margin-top: 10px;
+	margin-left: 1184px;
 }
 
 .dropZone {
-	/*! display: flex; */
-	/*! align-content: center; */
-	width: 196px;
-	height: 152px;
-	/*! margin-bottom: 25px; */
-	margin-top: 17px;
+	display: flex;
+	width: 175px;
+	height: 150px;
+	margin-top: 14px;
+}
+
+.one {
+  margin: 0
+}
+
+.three {
+	margin-top: 30px;
+}
+.four {
+	margin-top: 15px;
+}
+.five {
+	margin-top: 20px;
+}
+
+.Zoneone, .Zonetwo, .Zonothree, .Zonefour, .Zonefive {
+	display: flex;
+	width: 169px;
+	height: 151px;
+}
+.Zonesix, .Zoneseven, .Zoneeight, .Zonenine, .Zoneten {
+	display: flex;
+	width: 169px;
+	height: 151px;
+
 }
 
 .IconCont {
+	display: flex;
+}
+.goBack {
+	display: flex;
+	text-decoration: none;
+	font-family: 'Rock Salt', cursive;
+	font-weight: 500;
+  font-size: 20px;
+	margin-top: 16px;
+	/*! align-content: center; */
+	justify-content: center;
+	margin-bottom: 16px;
+	/*! position: absolute; */
+}
+
+.buttons {
+	cursor: pointer;
+	margin-right: 5px;
+	background-color: #f2f2f2;
+	border: 2px solid #00792d;
+	color: #4d4d4d;
+	text-align: center;
+	width: 80px;
+}
+
+.controls {
 	display: flex;
 }
